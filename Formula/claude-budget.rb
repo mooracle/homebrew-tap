@@ -1,28 +1,28 @@
 class ClaudeBudget < Formula
   desc "Per-commit Claude Code token-cost git trailers"
   homepage "https://github.com/mooracle/claude-budget"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mooracle/claude-budget/releases/download/v0.2.0/claude-budget-darwin-arm64"
-      sha256 "98c083b999096a13f1ca7a4f29459cf0c7b24fbac52b6f6bce94a9b42796189d"
+      url "https://github.com/mooracle/claude-budget/releases/download/v0.3.0/claude-budget-darwin-arm64"
+      sha256 "c0a6a7fa1efe6b69c270ff75005b517367c40d1db9e0175b5d5f4dbbea0e4871"
     end
     on_intel do
-      url "https://github.com/mooracle/claude-budget/releases/download/v0.2.0/claude-budget-darwin-amd64"
-      sha256 "4251629d687a3b0fe46f7a91e5fd8df8fee82d4086773929f51f72f6d8195d87"
+      url "https://github.com/mooracle/claude-budget/releases/download/v0.3.0/claude-budget-darwin-amd64"
+      sha256 "6f36ff27a584ba91029b2b512d4106cc3d791de76cb8e0cfb29308638f081260"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mooracle/claude-budget/releases/download/v0.2.0/claude-budget-linux-arm64"
-      sha256 "e1ba698528f5f68e28267f301f2c04ffadf0d5a6d3f1b0edd8ac0c78e959c432"
+      url "https://github.com/mooracle/claude-budget/releases/download/v0.3.0/claude-budget-linux-arm64"
+      sha256 "8bbe0cff9f9103a4c6dac208b6c192f4b61ba9bf16d7f71794aab7f021d66108"
     end
     on_intel do
-      url "https://github.com/mooracle/claude-budget/releases/download/v0.2.0/claude-budget-linux-amd64"
-      sha256 "9450da7fce7b1db3f38ade66afef9e27ddc20fc7a26a689a12b5cc74d7560c7e"
+      url "https://github.com/mooracle/claude-budget/releases/download/v0.3.0/claude-budget-linux-amd64"
+      sha256 "cac08b8042d5aa44f6e08528ce5dc6d586276186d18d6c40bc53b8a530d45cf7"
     end
   end
 
@@ -33,6 +33,6 @@ class ClaudeBudget < Formula
   end
 
   test do
-    assert_match "0.2.0", shell_output("#{bin}/claude-budget version")
+    assert_match "0.3.0", shell_output("#{bin}/claude-budget version")
   end
 end
